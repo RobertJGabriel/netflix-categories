@@ -12,7 +12,13 @@ $ npm install --save netflix-categories
 ```js
 const netflixCategories = require('netflix-categories');
 
-netflixCategories('Rainbow');
+netflixCategories.get('1');
+// Returns `African-American Crime Documentaries`
+
+netflixCategories.all();
+// Returns Object of all. {
+// "1":"African-American Crime Documentaries"
+// }
 ```
 ## License
 
